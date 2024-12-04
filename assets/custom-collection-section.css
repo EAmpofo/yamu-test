@@ -1,0 +1,126 @@
+
+  .collection-section {
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  .collection-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .collection-header h2 {
+
+    margin-bottom: 10px;
+  }
+
+  .collection-header p {
+    line-height: 30px;
+  }
+
+  .collection-grid {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    margin: 0px 150px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .collection-item {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .collection-item img {
+    width: 100%;
+    height: 508px;
+    border-radius: 10px;
+  }
+
+  .collection-item p {
+    line-height: 36px;
+  }
+
+  .collection-item a {
+    text-decoration: none;
+  }
+
+
+
+  @media screen and (max-width: 1024px) {
+    .collection-header p {
+      font-size: 18px;
+      width: 80%;
+      line-height: 28px;
+    }
+
+    .collection-grid {
+      margin: 0px 100px;
+      gap: 15px;
+    }
+
+    .collection-item img {
+      height: 400px;
+    }
+
+    .collection-item p {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .collection-header h2 {
+      font-size: 2.2rem !important;
+    }
+
+    .collection-header p {
+      padding-left: 0px;
+      padding-right: 0px;
+      font-size: 14px !important;
+      width: 100% !important;
+      margin-bottom: 30px !important;
+    }
+
+    .collection-grid {
+      margin: 0px !important;
+      gap: 10px;
+    }
+
+    .collection-item img {
+      height: 300px;
+    }
+
+    .collection-item p {
+      font-size: 14px !important;
+      margin: 0px !important;
+      padding: 0px !important;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .collection-header h2 {
+      font-size: 24px;
+    }
+
+    .collection-header p {
+      font-size: 14px;
+      width: 100%;
+      line-height: 20px;
+    }
+
+    .collection-grid {
+      margin: 0px 20px;
+      gap: 10px;
+    }
+
+    .collection-item img {
+      height: 200px;
+    }
+
+    .collection-item p {
+      font-size: 16px;
+    }
+  }
+

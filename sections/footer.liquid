@@ -1,0 +1,205 @@
+{{ 'custom-footer.css' | asset_url | stylesheet_tag }}
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <img
+        src="{{ section.settings.logo | image_url: width: 100 }}"
+        alt="{{ section.settings.copyright }}"
+        width="100"
+        height="100"
+      >
+      {% if section.settings.address != blank %}
+        <address>
+          {% assign address_parts = section.settings.address | split: ',' %}
+          {{ address_parts[0] -}}
+          <br>
+          {{ address_parts[1] }}
+        </address>
+      {% endif -%}
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>
+          {% if section.settings.links != blank %}
+            {{ section.settings.links }}
+          {% endif %}
+        </h4>
+        {%- if section.settings.menu != blank -%}
+          <ul class="">
+            {%- for link in section.settings.menu.links -%}
+              <li class="">
+                <a
+                  href="{{ link.url }}"
+                  class="linkss"
+                >
+                  {{ link.title }}
+                  {%- if link.links != blank -%}
+                    {% render 'icon-chevron-down' %}
+                  {%- endif -%}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="/pages/payment-options" class="linkss">Payment Options</a></li>
+          <li><a href="/pages/returns" class="linkss">Returns</a></li>
+          <li><a href="/policies/privacy-policy" class="linkss">Privacy Policies</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-newsletter">
+      <h4>Newsletter</h4>
+      <form action="/contact#newsletter" method="post" accept-charset="UTF-8">
+        <input type="email" name="contact[email]" required>
+        <button type="submit" class="linkss">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <!-- <hr class="bottom-line"> -->
+    <div class="bottom-line"></div>
+    {% if section.settings.copyright != blank %}
+      <p>{{ section.settings.copyright }}</p>
+    {% endif -%}
+  </div>
+</footer>
+<style>
+  .footer {
+    background-color: {{section.settings.footer_bg}};
+    color: {{section.settings.footer_text}} !important;
+  }
+  .footer-links .footer-newsletter h4, li, .linkss  {
+    color: {{section.settings.footer_text}} !important;
+  }
+  .footer-links li, a, h4, .footer-bottom, hr, .footer-newsletter button {
+    /* color: {{section.settings.footer_text}}; */
+  }
+  .footer-newsletter input, .footer-newsletter button {
+    border-bottom: 2px solid {{section.settings.footer_text}} !important;
+  }
+  .footer-links h4, .footer-newsletter h4 {
+    font-size: {{section.settings.link_font_size}}rem;
+    font-weight: {{section.settings.link_font_weight}};
+    color: {{section.settings.links_text-color}}
+  }
+  .bottom-line {
+    height: 2px !important;
+    display: block !important;
+    background-color: {{section.settings.footer_text}};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Footer logo",
+    },
+    {
+      "type": "header",
+      "content": "Links Settings"
+    },
+    {
+      "type": "text",
+      "label": "Links",
+      "id": "links",
+      "default": "Links"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu"
+    },
+
+    {
+      "type": "color",
+      "id": "links_text-color",
+      "label": "Links Title",
+      "default": "#9AA969"
+    },
+    {
+      "type": "range",
+      "id": "link_font_size",
+      "label": "Font Size",
+      "default": 1.1,
+      "min": 0.5,
+      "max": 3,
+      "step": 0.1,
+      "unit": "rem"
+    },
+    {
+      "type": "select",
+      "id": "link_font_weight",
+      "label": "Font Weight",
+      "options": [
+        { "value": "100", "label": "Thin" },
+        { "value": "200", "label": "Extra Light" },
+        { "value": "300", "label": "Light" },
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi-Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" },
+        { "value": "900", "label": "Black" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "text",
+      "label": "copyright",
+      "id": "copyright",
+      "default": "2024 Furnitura. All rights reserved"
+    },
+    {
+      "type": "textarea",
+      "id": "address",
+      "label": "Address",
+      "default": "400 University Drive Suite 200 Coral Gables, FL 33134 USA"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_newsletter",
+      "label": "Show Newsletter",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "footer_text",
+      "label": "Footer text color",
+      "default": "#F4F4F4"
+    },
+    {
+      "type": "color",
+      "id": "footer_bg",
+      "label": "Footer background",
+      "default": "#283618"
+    },
+    {
+      "type": "header",
+      "content": "Links Settings"
+    },
+    {
+      "type": "text",
+      "label": "Newsletter",
+      "id": "newsletter",
+      "default": "Newsletter"
+    },
+
+  ]
+}
+{% endschema %}

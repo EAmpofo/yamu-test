@@ -1,0 +1,162 @@
+
+  .collage-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+  }
+  .collage-header .head {
+    color: #616161;
+    font-weight: bold
+  }
+    .test-collage--grid {
+      height: 780px;
+      display: flex;
+    }
+    .first, .second, .third {
+      position: relative;
+    }
+    .first--card,
+    .second--card,
+    .third--card,
+    .forth--card,
+    .fifth--card,
+    .sixth--card,
+    .seventh--card,
+    .eighth--card,
+    .ninth--card {
+      overflow: hidden;
+      position: absolute;
+    }
+    .first{
+      width: 40%;
+
+    }
+    .second{
+      width: 21%;
+
+    }
+    .third{
+      width: 39%;
+
+    }
+
+    .first--card {
+      height: 38.1rem;
+      width: 12rem;
+    }
+    .first--card img{
+      height: 38.1rem;
+      width: 12rem;
+    }
+    .second--card {
+      height: 31rem;
+      width: 47rem;
+      top: 7rem;
+      left: 13.5rem;
+    }
+    .second--card img {
+      height: 31rem;
+      width: 47rem;
+    }
+    .third--card {
+      height: 32.5rem;
+      width: 22rem;
+      bottom: 5.5rem;
+    }
+    .third--card img{
+      height: 32.5rem;
+      width: 22rem;
+    }
+    .forth--card {
+      height: 24.5rem;
+      width: 36.5rem;
+      bottom: 13.5rem;
+      left: 24rem;
+    }
+    .forth--card img {
+      height: 24.5rem;
+      width: 36.5rem;
+    }
+    .fifth--card {
+      height: 39rem;
+      width: 29.5rem;
+      left: 1rem;
+      top: 17rem;
+    }
+    .sixth--card {
+      height: 35rem;
+      width: 29rem;
+      left: 0rem;
+      top: 10rem;
+    }
+    .seventh--card {
+      height: 24rem;
+      width: 18rem;
+      left: 0rem;
+      bottom: 7rem;
+    }
+    .eighth--card {
+      height: 19.5rem;
+      width: 26rem;
+      left: 20rem;
+      bottom: 11.5rem;
+    }
+    .ninth--card {
+      height: 45rem;
+      width: 28.5rem;
+      right: 0px;
+      top: 0px;
+
+    }
+    .ninth--card img {
+      height: 45rem;
+      width: 28.5rem;
+    }
+
+  @media (max-width: 768px) {
+    .test-collage--grid {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+    }
+
+    .first, .second, .third {
+      width: 100%;
+      position: static;
+    }
+
+    .first--card,
+    .second--card,
+    .third--card,
+    .forth--card,
+    .fifth--card,
+    .sixth--card,
+    .seventh--card,
+    .eighth--card,
+    .ninth--card {
+      position: static;
+      margin-bottom: 1rem;
+      width: 100%;
+      height: auto;
+      border: none;
+    }
+
+    .first--card img,
+    .second--card img,
+    .third--card img,
+    .forth--card img,
+    .fifth--card img,
+    .sixth--card img,
+    .seventh--card img,
+    .eighth--card img,
+    .ninth--card img {
+      width: 100%;
+      height: auto;
+    }
+    .first--card img {
+      display: none;
+    }
+  }
+</style>

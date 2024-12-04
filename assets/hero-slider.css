@@ -1,0 +1,207 @@
+<style>
+  .hero-section {
+    position: relative;
+    background-color: #ffffff;
+  }
+
+  .hero-banner {
+    position: relative;
+    min-height: 887px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-banner__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .hero-banner__background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-banner__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .hero-banner__tag {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .hero-banner__content {
+    position: relative;
+    z-index: 3;
+    max-width: 643px;
+    padding: 3rem;
+    height: 483px;
+    border-radius: 10px;
+  }
+
+  .hero-banner__content--left {
+    margin-right: auto;
+  }
+
+  .hero-banner__content--center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-banner__content--right {
+    margin-left: auto;
+    margin-right: 15rem;
+    margin-top: -12rem;
+  }
+
+  .hero-banner__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+    .hero-banner__title--h1{
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .hero-banner__title--h0{
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+  .hero-banner__description {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .hero-banner__button {
+    display: inline-block;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    text-align: center;
+  }
+
+  .hero-banner__button:hover {
+    opacity: 0.9;
+  }
+
+  .product-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .product-card {
+    background: #f8f8f8;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .product-card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .product-card__title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-card__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .product-card__price-original {
+    color: #666;
+    text-decoration: line-through;
+  }
+
+  .product-card__price-current {
+    font-weight: bold;
+    color: #1a1a1a;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-banner {
+      min-height: 400px;
+    }
+    .hero-banner__tag, .hero-banner__description{
+      font-size: 14px !important;
+    }
+    .hero-banner__title {
+      font-size: 18px !important;
+    }
+    .hero-banner__content--right {
+      margin-left: 15px;
+      margin-right: 0rem !important;
+      margin-top: 0rem;
+      width: 320px !important;
+      height: 250px !important;
+    }
+    .hero-banner__content--left {
+    /* margin-right: auto; */
+    margin-right: 13rem;
+      width: 370px;
+    }
+    .hero-banner__button {
+      padding: 5px !important;
+        width: 100px !important;
+    }
+
+    .hero-banner__content {
+      padding: 2rem;
+    }
+
+    .hero-banner__title {
+      font-size: 2rem;
+    }
+
+    .product-cards {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .hero-banner__background {
+    
+    z-index: 0;
+  }
+
+
+  .hero-banner__overlay {
+    
+    z-index: 0;
+  }
+
+
+  .hero-banner__content {
+    z-index: 0;
+  }
+  }
+</style>

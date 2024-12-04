@@ -1,0 +1,277 @@
+{{ 'grid-custom-collage.css' | asset_url | stylesheet_tag }}
+
+<section class="collage-container">
+  <div class="collage-header">
+    {% if section.settings.heading != blank %}
+      <div class="head_hashtag">{{ section.settings.heading }}</div>
+    {% endif %}
+    {% if section.settings.hashtag != blank %}
+      <div class="collage_hashtag">{{ section.settings.hashtag }}</div>
+    {% endif %}
+  </div>
+  <div class="test-collage--grid">
+    <div class="first">
+      {% for block in section.blocks %}
+        {% if forloop.index == 1 %}
+          <div class="first--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
+            {% endif %}
+          </div>
+        {% elsif forloop.index == 2 %}
+          <div class="second--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
+            {% endif %}
+          </div>
+        {% elsif forloop.index == 3 %}
+          <div class="third--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
+            {% endif %}
+          </div>
+        {% elsif forloop.index == 4 %}
+          <div class="forth--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="second">
+      {% if section.blocks.size > 4 %}
+        <div class="fifth--card">
+          {% if section.blocks[4].settings.image %}
+            <img src="{{ section.blocks[4].settings.image | img_url: '720x' }}" alt="Collage Image">
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+    <div class="third">
+      {% for block in section.blocks offset: 5 %}
+        {% if forloop.index == 1 %}
+          <div class="sixth--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
+            {% endif %}
+          </div>
+        {% elsif forloop.index == 2 %}
+          <div class="seventh--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
+            {% endif %}
+          </div>
+        {% elsif forloop.index == 3 %}
+          <div class="eighth--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
+            {% endif %}
+          </div>
+        {% elsif forloop.index == 4 %}
+          <div class="ninth--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | image_url: width: '720x' }}" alt="Collage Image" class="ninth-img">
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+  .collage-container{
+    background-color: {{section.settings.colage_bg}};
+  }
+  .collage-header{
+    color: {{section.settings.heading_text}};
+    padding: {{section.settings.padding_size}}rem;
+  }
+  .head_hastag{
+    font-size: {{section.settings.heading_font_size}}rem;
+    font-weight: {{section.settings.heading_font_weight}}
+  }
+  .collage_hashtag{
+    font-size: {{section.settings.description_font_size}}rem;
+    font-weight: {{section.settings.description_font_weight}}
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Grid Custom Collage",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Share your setup with"
+    },
+    {
+      "type": "text",
+      "id": "hashtag",
+      "label": "Hashtag",
+      "default": "#Funitura_Furniture"
+    },
+   {
+     "type": "color",
+     "label": "Heading color",
+     "id": "heading_text",
+     "default": "#3A3A3A"
+   },
+   {
+     "type": "color",
+     "label": "Background color",
+     "id": "colage_bg",
+     "default": "#fff"
+   },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "label": "Heading Font Size",
+      "default": 2.5,
+      "min": 1,
+      "max": 5,
+      "step": 0.1,
+      "unit": "rem"
+    },
+    {
+      "type": "select",
+      "id": "heading_font_weight",
+      "label": "Heading Font Weight",
+      "options": [
+        { "value": "100", "label": "Thin" },
+        { "value": "200", "label": "Extra Light" },
+        { "value": "300", "label": "Light" },
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi-Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" },
+        { "value": "900", "label": "Black" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "range",
+      "id": "description_font_size",
+      "label": "Description Font Size",
+      "default": 1.1,
+      "min": 0.5,
+      "max": 3,
+      "step": 0.1,
+      "unit": "rem"
+    },
+    {
+      "type": "select",
+      "id": "description_font_weight",
+      "label": "Description Font Weight",
+      "options": [
+        { "value": "100", "label": "Thin" },
+        { "value": "200", "label": "Extra Light" },
+        { "value": "300", "label": "Light" },
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi-Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" },
+        { "value": "900", "label": "Black" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "range",
+      "id": "padding_size",
+      "label": "Padding",
+      "default": 2.5,
+      "min": 1,
+      "max": 5,
+      "step": 0.1,
+      "unit": "rem"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "limit": 9,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "label": "Grid Position",
+          "options": [
+            {
+              "value": "left-tall",
+              "label": "Left Tall"
+            },
+            {
+              "value": "top-wide",
+              "label": "Top Wide"
+            },
+            {
+              "value": "center-square",
+              "label": "Center Square"
+            },
+            {
+              "value": "bottom-wide",
+              "label": "Bottom Wide"
+            },
+            {
+              "value": "right-tall",
+              "label": "Right Tall"
+            },
+            {
+              "value": "small-square",
+              "label": "Small Square"
+            }
+          ],
+          "default": "center-square"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Test Collage",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
