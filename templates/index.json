@@ -142,18 +142,21 @@
         "slide_84RpfK": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_24.png",
             "heading": ""
           }
         },
         "slide_8E9JGE": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_25.png",
             "heading": ""
           }
         },
         "slide_jiD7Nq": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/prod4.png",
             "heading": ""
           }
         }
@@ -171,11 +174,11 @@
         "button_text": "Explore More",
         "button_link": "shopify://collections/our-product",
         "button_color": "#283618",
-        "button_text_color": "#FFFFFF",
-        "heading_font_size": 2.5,
-        "description_font_size": 1.1,
-        "heading_font_weight": "400",
-        "margin_size": 2.5
+        "button_text_color": "#ffffff",
+        "heading_font_size": 40,
+        "description_font_size": 16,
+        "heading_font_weight": "700",
+        "margin_size": 16
       }
     }
   },
