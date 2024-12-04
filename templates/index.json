@@ -119,7 +119,7 @@
         "name_size": 16,
         "desciption": "#898989",
         "description_size": 12,
-        "padding_left_right": 40,
+        "padding_left_right": 56,
         "button_width": 184,
         "button_text": "#333333",
         "hover_button_text": "Add to cart",
