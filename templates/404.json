@@ -73,13 +73,22 @@
           "settings": {
             "image": "shopify://shop_images/image_100.png",
             "title": "Dining",
-            "link": ""
+            "link": "shopify://products/leviosa"
+          }
+        },
+        "collection_item_HRDygP": {
+          "type": "collection_item",
+          "settings": {
+            "image": "shopify://shop_images/image_101.png",
+            "title": "Dining",
+            "link": "shopify://products/leviosa"
           }
         }
       },
       "block_order": [
         "collection_item_RfCLXf",
-        "collection_item_B6VkLE"
+        "collection_item_B6VkLE",
+        "collection_item_HRDygP"
       ],
       "settings": {
         "section_title": "Discover Our New Collection",
