@@ -10,7 +10,7 @@
 
   }
   .current-price {
-    font-size: {{section.settings.price_size}}rem;
+    font-size: {{section.settings.price_size}}px;
     font-weight: {{ section.settings.heading_font_weight }};
   }
   .product-title-cust{
@@ -120,11 +120,11 @@
       "type": "range",
       "id": "price_size",
       "label": "Font size",
-      "min": 0,
-      "max": 10,
+      "min": 5,
+      "max": 100,
       "step": 1,
-      "unit": "rem",
-      "default": 1
+      "unit": "px",
+      "default": 16
     },
     {
       "type": "select",
