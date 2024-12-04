@@ -2,12 +2,12 @@
 
 <style>
   .collection-header h2 {
-    font-size: {{section.settings.heading_font_size}}rem;
+    font-size: {{section.settings.heading_font_size}}px;
     color: {{section.settings.head_title}};
     font-weight: {{section.settings.heading_font_weight}};
   }
   .collection-header p{
-    font-size: {{section.settings.description_font_size}}rem;
+    font-size: {{section.settings.description_font_size}}px;
     color: {{section.settings.description_title}};
     width: {{section.settings.width}}px;
     margin-bottom: {{section.settings.margin}}px;
@@ -37,7 +37,6 @@
     {% endfor %}
   </div>
 </div>
-
 
 {% schema %}
 {
@@ -78,11 +77,11 @@
           "type": "range",
           "id": "heading_font_size",
           "label": "Font Size",
-          "default": 2.5,
-          "min": 1,
-          "max": 5,
-          "step": 0.1,
-          "unit": "rem"
+          "default": 16,
+          "min": 5,
+          "max": 100,
+          "step": 1,
+          "unit": "px"
         },
         {
           "type": "select",
@@ -111,11 +110,11 @@
           "type": "range",
           "id": "description_font_size",
           "label": "Font Size",
-          "default": 1,
-          "min": 1,
-          "max": 5,
-          "step": 0.1,
-          "unit": "rem"
+          "default": 16,
+          "min": 5,
+          "max": 100,
+          "step": 1,
+          "unit": "px"
         },
     {
 
