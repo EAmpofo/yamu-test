@@ -67,8 +67,8 @@ h3 {
 
 .old-price {
   text-decoration: line-through;
-
   margin-left: 8px;
+  font-size: 16px !important;
 }
 
 .product-overlay {
