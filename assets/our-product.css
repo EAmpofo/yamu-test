@@ -15,20 +15,20 @@
  */
 .product-grid {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap onto the next line */
-  justify-content: center; /* Center items horizontally */
-  gap: 28px; /* Adjust the gap between items */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
 }
 
 .product-grid > .product-card-col {
-  width: 285px; /* Fixed width for each item */
+  width: 285px;
   margin-bottom: 28px;
 }
 .product-card-col {
   position: relative;
   overflow: hidden;
   width: 285px;
-  height: 400px;
+  height: 446px;
 }
 
 .product-card-col:hover {
