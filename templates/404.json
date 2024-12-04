@@ -36,7 +36,7 @@
         "text_color": "#ffffff",
         "btn_color": "#ffffff",
         "background_color": "#9aa969",
-        "btn_background_color": "#000"
+        "btn_background_color": "#000000"
       }
     },
     "hero_banner_products_LEMEDb": {
@@ -52,7 +52,7 @@
         "gradient_opacity": 100,
         "price_title": "#283618",
         "title_size": 1,
-        "price": "#7C8F3E",
+        "price": "#7c8f3e",
         "price_size": 2,
         "heading_font_weight": "700"
       }
@@ -72,16 +72,16 @@
           "type": "collection_item",
           "settings": {
             "image": "shopify://shop_images/image_100.png",
-            "title": "Dining",
-            "link": "shopify://products/leviosa"
+            "title": "Living",
+            "link": "shopify://products/living"
           }
         },
         "collection_item_HRDygP": {
           "type": "collection_item",
           "settings": {
             "image": "shopify://shop_images/image_101.png",
-            "title": "Dining",
-            "link": "shopify://products/leviosa"
+            "title": "Bedroom",
+            "link": "shopify://products/bedroom"
           }
         }
       },
@@ -105,12 +105,39 @@
         "img-tile_font_size": 16,
         "img-tile_font_weight": "700"
       }
+    },
+    "our_product_custom_qHaUTi": {
+      "type": "our-product-custom",
+      "settings": {
+        "heading": "Our Products",
+        "title": "#3A3A3A",
+        "title_size": 27,
+        "collection": "",
+        "collection_bg": "#F4F5F7",
+        "button_bg": "#ffffff",
+        "name": "#3A3A3A",
+        "name_size": 16,
+        "desciption": "#898989",
+        "description_size": 12,
+        "padding_left_right": 40,
+        "button_width": 120,
+        "button_text": "#333",
+        "hover_button_text": "Add to cart",
+        "overlay_button_width": 120,
+        "overlay_button_text": "#333",
+        "overlay_button_bg": "#ffffff",
+        "overlay_button_font_weight": "400",
+        "share-text": "Share",
+        "compare-text": "Compare",
+        "like-text": "Like"
+      }
     }
   },
   "order": [
     "main",
     "hero_banner_XFbpgd",
     "hero_banner_products_LEMEDb",
-    "custom_collection_section_B3tFec"
+    "custom_collection_section_B3tFec",
+    "our_product_custom_qHaUTi"
   ]
 }
