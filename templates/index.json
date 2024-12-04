@@ -9,32 +9,37 @@
  */
 {
   "sections": {
-    "hero_slider_8hUpCg": {
-      "type": "hero-slider",
+    "main": {
+      "type": "main-404",
+      "disabled": true,
+      "settings": {}
+    },
+    "hero_banner_XFbpgd": {
+      "type": "hero-banner",
       "settings": {
         "background_image": "shopify://shop_images/scandinavian-interior-mockup-wall-decal-background_1.jpg",
         "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "background_position": "center right",
+        "overlay_opacity": 50,
+        "background_position": "center center",
         "tag_text": "New Arrival!",
         "title": "Transform Your Space with Our New Collection",
         "description": "Discover our stunning new collection of furniture, designed to elevate your space with style and comfort.",
         "button_text": "BUY NOW",
-        "button_link": "shopify://products/pingky",
-        "button_width": 192,
-        "padding": 12,
+        "button_link": "shopify://products/respira",
+        "button_width": 120,
+        "padding": 16,
         "border_radius": 0,
         "button_color": "#ffffff",
         "tag_font_size": 2,
         "content_alignment": "right",
-        "heading_size": 5.5,
+        "heading_size": 6,
         "text_color": "#ffffff",
         "btn_color": "#ffffff",
         "background_color": "#9aa969",
-        "btn_background_color": "#283618"
+        "btn_background_color": "#000000"
       }
     },
-    "hero_banner_products_iwAACx": {
+    "hero_banner_products_LEMEDb": {
       "type": "hero-banner-products",
       "settings": {
         "products": [
@@ -43,47 +48,47 @@
           "lolito-3"
         ],
         "content_alignment": "left",
-        "background_gradient": "linear-gradient(135deg, #C0C0C0, #B7C38C)",
-        "gradient_opacity": 95,
+        "background_gradient": "linear-gradient(to right, #C0C0C0A1, #B7C38CB2)",
+        "gradient_opacity": 100,
         "price_title": "#283618",
-        "title_size": 3,
+        "title_size": 1,
         "price": "#7c8f3e",
         "price_size": 2,
         "heading_font_weight": "700"
       }
     },
-    "custom_collection_section_We8n6n": {
+    "custom_collection_section_B3tFec": {
       "type": "custom-collection-section",
       "blocks": {
-        "collection_item_C6MJ3H": {
+        "collection_item_RfCLXf": {
           "type": "collection_item",
           "settings": {
-            "image": "shopify://shop_images/image_106.png",
+            "image": "shopify://shop_images/Rectangle_40.png",
             "title": "Dining",
-            "link": ""
+            "link": "shopify://products/dining"
           }
         },
-        "collection_item_8TWa3e": {
+        "collection_item_B6VkLE": {
           "type": "collection_item",
           "settings": {
             "image": "shopify://shop_images/image_100.png",
             "title": "Living",
-            "link": ""
+            "link": "shopify://products/living"
           }
         },
-        "collection_item_BcyDe3": {
+        "collection_item_HRDygP": {
           "type": "collection_item",
           "settings": {
             "image": "shopify://shop_images/image_101.png",
             "title": "Bedroom",
-            "link": ""
+            "link": "shopify://products/bedroom"
           }
         }
       },
       "block_order": [
-        "collection_item_C6MJ3H",
-        "collection_item_8TWa3e",
-        "collection_item_BcyDe3"
+        "collection_item_RfCLXf",
+        "collection_item_B6VkLE",
+        "collection_item_HRDygP"
       ],
       "settings": {
         "section_title": "Discover Our New Collection",
@@ -93,33 +98,33 @@
         "heading_font_size": 3.2,
         "heading_font_weight": "700",
         "description_title": "#666666",
-        "description_font_size": 1.6,
-        "width": 560,
-        "margin": 50,
+        "description_font_size": 1.7,
+        "width": 600,
+        "margin": 25,
         "img-tile-color": "#333333",
-        "img-tile_font_size": 15,
+        "img-tile_font_size": 16,
         "img-tile_font_weight": "700"
       }
     },
-    "our_product_custom_JyJRTY": {
+    "our_product_custom_qHaUTi": {
       "type": "our-product-custom",
       "settings": {
         "heading": "Our Products",
         "title": "#3a3a3a",
-        "title_size": 35,
+        "title_size": 27,
         "collection": "our-product",
         "collection_bg": "#f4f5f7",
         "button_bg": "#ffffff",
         "name": "#3a3a3a",
-        "name_size": 17,
-        "desciption": "#b0b0b0",
-        "description_size": 16,
-        "padding_left_right": 100,
-        "button_width": 216,
-        "button_text": "#283618",
+        "name_size": 16,
+        "desciption": "#898989",
+        "description_size": 12,
+        "padding_left_right": 40,
+        "button_width": 184,
+        "button_text": "#333333",
         "hover_button_text": "Add to cart",
-        "overlay_button_width": 180,
-        "overlay_button_text": "#ffffff",
+        "overlay_button_width": 120,
+        "overlay_button_text": "#FFFFFF",
         "overlay_button_bg": "#283618",
         "overlay_button_font_weight": "700",
         "share-icon": "shopify://shop_images/ShareVector.png",
@@ -129,149 +134,13 @@
         "like-icon": "shopify://shop_images/loveVector.png",
         "like-text": "Like"
       }
-    },
-    "image_slideshow_mLKwHC": {
-      "type": "image-slideshow",
-      "blocks": {
-        "slide_djEQLd": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_24.png",
-            "heading": ""
-          }
-        },
-        "slide_TyTc4m": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_25.png",
-            "heading": ""
-          }
-        },
-        "slide_YectpV": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/image4.png",
-            "heading": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_djEQLd",
-        "slide_TyTc4m",
-        "slide_YectpV"
-      ],
-      "settings": {
-        "heading": "20+ Beautiful rooms inspiration",
-        "description": "Our designer already made a lot of beautiful prototype of rooms that inspire you",
-        "background_color": "#f5f5e9",
-        "text_color": "#2a3527",
-        "button_text": "Explore More",
-        "button_link": "",
-        "button_color": "#2a3527",
-        "button_text_color": "#ffffff",
-        "heading_font_size": 4,
-        "description_font_size": 1.8,
-        "heading_font_weight": "700",
-        "margin_size": 3.5
-      }
-    },
-    "test_collage_XzfVny": {
-      "type": "test-collage",
-      "blocks": {
-        "image_iDCeRN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_36.png",
-            "position": "center-square"
-          }
-        },
-        "image_dH8AHY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_38.png",
-            "position": "center-square"
-          }
-        },
-        "image_RqjHVF": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_37.png",
-            "position": "center-square"
-          }
-        },
-        "image_fi8gxe": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_39.png",
-            "position": "center-square"
-          }
-        },
-        "image_DnP8kH": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_40.png",
-            "position": "center-square"
-          }
-        },
-        "image_eUyMzn": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_43.png",
-            "position": "center-square"
-          }
-        },
-        "image_WFfYNp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_41.png",
-            "position": "center-square"
-          }
-        },
-        "image_3Vmi9L": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_44.png",
-            "position": "center-square"
-          }
-        },
-        "image_AxpGkN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Rectangle_45.png",
-            "position": "center-square"
-          }
-        }
-      },
-      "block_order": [
-        "image_iDCeRN",
-        "image_dH8AHY",
-        "image_RqjHVF",
-        "image_fi8gxe",
-        "image_DnP8kH",
-        "image_eUyMzn",
-        "image_WFfYNp",
-        "image_3Vmi9L",
-        "image_AxpGkN"
-      ],
-      "settings": {
-        "heading": "Share your setup with",
-        "hashtag": "#Funitura_Furniture",
-        "heading_text": "#3a3a3a",
-        "colage_bg": "#ffffff",
-        "heading_font_size": 2.3,
-        "heading_font_weight": "400",
-        "description_font_size": 2.8,
-        "description_font_weight": "700",
-        "padding_size": 2
-      }
     }
   },
   "order": [
-    "hero_slider_8hUpCg",
-    "hero_banner_products_iwAACx",
-    "custom_collection_section_We8n6n",
-    "our_product_custom_JyJRTY",
-    "image_slideshow_mLKwHC",
-    "test_collage_XzfVny"
+    "main",
+    "hero_banner_XFbpgd",
+    "hero_banner_products_LEMEDb",
+    "custom_collection_section_B3tFec",
+    "our_product_custom_qHaUTi"
   ]
 }
