@@ -1,5 +1,23 @@
 {{ 'custom-collection-section.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .collection-header h2 {
+    font-size: {{section.settings.heading_font_size}}rem;
+    color: {{section.settings.head_title}};
+    font-weight: {{section.settings.heading_font_weight}};
+  }
+  .collection-header p{
+    font-size: {{section.settings.description_font_size}}rem;
+    color: {{section.settings.description_title}};
+    width: {{section.settings.width}}px;
+    margin-bottom: {{section.settings.margin}}px;
+  }
+  .collection-item p {
+    font-size: {{section.settings.img-tile_font_size}}px;
+    font-weight: {{section.settings.img-tile_font_weight}};
+    color: {{section.settings.img-tile-color}};
+  }
+</style>
 <div class="collection-section">
   <div class="collection-header">
     <h2>{{ section.settings.section_title }}</h2>
@@ -20,24 +38,6 @@
   </div>
 </div>
 
-<style>
-  .collection-header h2 {
-    font-size: {{section.settings.heading_font_size}}rem;
-    color: {{section.settings.head_title}};
-    font-weight: {{section.settings.heading_font_weight}};
-  }
-  .collection-header p{
-    font-size: {{section.settings.description_font_size}}rem;
-    color: {{section.settings.description_title}};
-    width: {{section.settings.width}}px;
-    margin-bottom: {{section.settings.margin}}px;
-  }
-  .collection-item p {
-    font-size: {{section.settings.img-tile_font_size}}px;
-    font-weight: {{section.settings.img-tile_font_weight}};
-    color: {{section.settings.img-tile-color}};
-  }
-</style>
 
 {% schema %}
 {
