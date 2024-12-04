@@ -51,9 +51,9 @@
         "background_gradient": "linear-gradient(to right, #C0C0C0A1, #B7C38CB2)",
         "gradient_opacity": 100,
         "price_title": "#283618",
-        "title_size": 1,
+        "title_size": 20,
         "price": "#7c8f3e",
-        "price_size": 2,
+        "price_size": 23,
         "heading_font_weight": "700"
       }
     },
