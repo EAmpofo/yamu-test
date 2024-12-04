@@ -86,7 +86,10 @@
     .container h2 {
       font-size: {{section.settings.title_size}}px;
       color: {{section.settings.title}};
-      margin-top: 0px !important;
+      font-weight: {{section.settings.title_font_weight}}
+    }
+    .our-products{
+
     }
     .product-grid {
       padding-left: {{ section.settings.padding_left_right }}px;
@@ -176,6 +179,23 @@
       "default": 16
     },
     {
+      "type": "select",
+      "id": "title_font_weight",
+      "label": "Font Weight",
+      "options": [
+        { "value": "100", "label": "Thin" },
+        { "value": "200", "label": "Extra Light" },
+        { "value": "300", "label": "Light" },
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi-Bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra Bold" },
+        { "value": "900", "label": "Black" }
+      ],
+      "default": "400"
+    },
+    {
       "type": "collection",
       "id": "collection",
       "label": "Product Collection"
@@ -239,7 +259,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
+      "label": "Padding",
       "default": 40
     },
     {
