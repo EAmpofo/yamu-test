@@ -12,19 +12,6 @@
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
-        "blocks": {
-          "announcement-bar-0": {
-            "type": "announcement",
-            "settings": {
-              "text": "Welcome to our store",
-              "color_scheme": "accent-1",
-              "link": ""
-            }
-          }
-        },
-        "block_order": [
-          "announcement-bar-0"
-        ],
         "settings": {}
       },
       "header": {
@@ -42,13 +29,13 @@
         "settings": {
           "links": "Links",
           "menu": "main-menu",
-          "links_text-color": "#9AA969",
+          "links_text-color": "#9aa969",
           "link_font_size": 1.1,
           "link_font_weight": "400",
           "copyright": "2024 Furnitura. All rights reserved",
           "address": "400 University Drive Suite 200 Coral Gables, FL 33134 USA",
           "show_newsletter": true,
-          "footer_text": "#F4F4F4",
+          "footer_text": "#f4f4f4",
           "footer_bg": "#283618",
           "newsletter": "Newsletter"
         }

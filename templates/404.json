@@ -11,10 +11,56 @@
   "sections": {
     "main": {
       "type": "main-404",
+      "disabled": true,
       "settings": {}
+    },
+    "hero_banner_XFbpgd": {
+      "type": "hero-banner",
+      "settings": {
+        "background_image": "shopify://shop_images/scandinavian-interior-mockup-wall-decal-background_1.jpg",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "background_position": "center center",
+        "tag_text": "New Arrival!",
+        "title": "Transform Your Space with Our New Collection",
+        "description": "Discover our stunning new collection of furniture, designed to elevate your space with style and comfort.",
+        "button_text": "BUY NOW",
+        "button_link": "shopify://products/respira",
+        "button_width": 120,
+        "padding": 16,
+        "border_radius": 0,
+        "button_color": "#ffffff",
+        "tag_font_size": 2,
+        "content_alignment": "right",
+        "heading_size": 6,
+        "text_color": "#ffffff",
+        "btn_color": "#ffffff",
+        "background_color": "#9aa969",
+        "btn_background_color": "#000"
+      }
+    },
+    "hero_banner_products_LEMEDb": {
+      "type": "hero-banner-products",
+      "settings": {
+        "products": [
+          "lolito-1",
+          "lolito-2",
+          "lolito-3"
+        ],
+        "content_alignment": "left",
+        "background_gradient": "linear-gradient(to right, #C0C0C0A1, #B7C38CB2)",
+        "gradient_opacity": 100,
+        "price_title": "#283618",
+        "title_size": 1,
+        "price": "#7C8F3E",
+        "price_size": 2,
+        "heading_font_weight": "700"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "hero_banner_XFbpgd",
+    "hero_banner_products_LEMEDb"
   ]
 }
