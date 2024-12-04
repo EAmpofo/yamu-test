@@ -14,7 +14,7 @@
     font-weight: {{ section.settings.heading_font_weight }};
   }
   .product-title-cust{
-    font-size: {{section.settings.head_title}}rem;
+    font-size: {{section.settings.title_size}}px;
     color: {{section.settings.price_title}}
   }
 </style>
@@ -104,11 +104,11 @@
       "type": "range",
       "id": "title_size",
       "label": "Title size",
-      "min": 0,
-      "max": 10,
+      "min": 5,
+      "max": 100,
       "step": 1,
-      "unit": "rem",
-      "default": 1
+      "unit": "px",
+      "default": 16
     },
     {
       "type": "color",
