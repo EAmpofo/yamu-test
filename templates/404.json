@@ -56,11 +56,52 @@
         "price_size": 2,
         "heading_font_weight": "700"
       }
+    },
+    "custom_collection_section_B3tFec": {
+      "type": "custom-collection-section",
+      "blocks": {
+        "collection_item_RfCLXf": {
+          "type": "collection_item",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_40.png",
+            "title": "Dining",
+            "link": "shopify://products/dining"
+          }
+        },
+        "collection_item_B6VkLE": {
+          "type": "collection_item",
+          "settings": {
+            "image": "shopify://shop_images/image_100.png",
+            "title": "Dining",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_RfCLXf",
+        "collection_item_B6VkLE"
+      ],
+      "settings": {
+        "section_title": "Discover Our New Collection",
+        "section_description": "From sleek, modern designs to timeless classics, each piece is crafted to enhance your living space and suit your unique style.",
+        "items_per_row": 3,
+        "head_title": "#333333",
+        "heading_font_size": 3.2,
+        "heading_font_weight": "700",
+        "description_title": "#666666",
+        "description_font_size": 1.7,
+        "width": 600,
+        "margin": 25,
+        "img-tile-color": "#333333",
+        "img-tile_font_size": 16,
+        "img-tile_font_weight": "700"
+      }
     }
   },
   "order": [
     "main",
     "hero_banner_XFbpgd",
-    "hero_banner_products_LEMEDb"
+    "hero_banner_products_LEMEDb",
+    "custom_collection_section_B3tFec"
   ]
 }
