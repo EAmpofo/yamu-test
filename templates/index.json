@@ -135,6 +135,48 @@
         "like-icon": "shopify://shop_images/loveVector.png",
         "like-text": "Like"
       }
+    },
+    "image_slideshow_MnMgf8": {
+      "type": "image-slideshow",
+      "blocks": {
+        "slide_84RpfK": {
+          "type": "slide",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "slide_8E9JGE": {
+          "type": "slide",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "slide_jiD7Nq": {
+          "type": "slide",
+          "settings": {
+            "heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_84RpfK",
+        "slide_8E9JGE",
+        "slide_jiD7Nq"
+      ],
+      "settings": {
+        "heading": "20+ Beautiful rooms inspiration",
+        "description": "Our designer already made a lot of beautiful prototype of rooms that inspire you",
+        "background_color": "#e6ebd5",
+        "text_color": "#283618",
+        "button_text": "Explore More",
+        "button_link": "shopify://collections/our-product",
+        "button_color": "#283618",
+        "button_text_color": "#FFFFFF",
+        "heading_font_size": 2.5,
+        "description_font_size": 1.1,
+        "heading_font_weight": "400",
+        "margin_size": 2.5
+      }
     }
   },
   "order": [
@@ -142,6 +184,7 @@
     "hero_banner_XFbpgd",
     "hero_banner_products_LEMEDb",
     "custom_collection_section_B3tFec",
-    "our_product_custom_qHaUTi"
+    "our_product_custom_qHaUTi",
+    "image_slideshow_MnMgf8"
   ]
 }
