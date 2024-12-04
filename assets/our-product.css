@@ -21,7 +21,8 @@
 }
 
 .product-grid > .product-card-col {
-  flex: 0 0 calc(25% - 28px); /* Makes each item take up 25% of the row width, minus the gap */
+  width: 285px; /* Fixed width for each item */
+  margin-bottom: 28px;
 }
 .product-card-col {
   position: relative;
