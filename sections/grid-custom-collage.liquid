@@ -1,85 +1,4 @@
 {{ 'grid-custom-collage.css' | asset_url | stylesheet_tag }}
-
-<section class="collage-container">
-  <div class="collage-header">
-    {% if section.settings.heading != blank %}
-      <div class="head_hashtag">{{ section.settings.heading }}</div>
-    {% endif %}
-    {% if section.settings.hashtag != blank %}
-      <div class="collage_hashtag">{{ section.settings.hashtag }}</div>
-    {% endif %}
-  </div>
-  <div class="test-collage--grid">
-    <div class="first">
-      {% for block in section.blocks %}
-        {% if forloop.index == 1 %}
-          <div class="first--card">
-            {% if block.settings.image %}
-              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
-            {% endif %}
-          </div>
-        {% elsif forloop.index == 2 %}
-          <div class="second--card">
-            {% if block.settings.image %}
-              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
-            {% endif %}
-          </div>
-        {% elsif forloop.index == 3 %}
-          <div class="third--card">
-            {% if block.settings.image %}
-              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
-            {% endif %}
-          </div>
-        {% elsif forloop.index == 4 %}
-          <div class="forth--card">
-            {% if block.settings.image %}
-              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
-            {% endif %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-    <div class="second">
-      {% if section.blocks.size > 4 %}
-        <div class="fifth--card">
-          {% if section.blocks[4].settings.image %}
-            <img src="{{ section.blocks[4].settings.image | img_url: '720x' }}" alt="Collage Image">
-          {% endif %}
-        </div>
-      {% endif %}
-    </div>
-    <div class="third">
-      {% for block in section.blocks offset: 5 %}
-        {% if forloop.index == 1 %}
-          <div class="sixth--card">
-            {% if block.settings.image %}
-              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
-            {% endif %}
-          </div>
-        {% elsif forloop.index == 2 %}
-          <div class="seventh--card">
-            {% if block.settings.image %}
-              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
-            {% endif %}
-          </div>
-        {% elsif forloop.index == 3 %}
-          <div class="eighth--card">
-            {% if block.settings.image %}
-              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image">
-            {% endif %}
-          </div>
-        {% elsif forloop.index == 4 %}
-          <div class="ninth--card">
-            {% if block.settings.image %}
-              <img src="{{ block.settings.image | image_url: width: '720x' }}" alt="Collage Image" class="ninth-img">
-            {% endif %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
 <style>
   .collage-container{
     background-color: {{section.settings.colage_bg}};
@@ -97,6 +16,89 @@
     font-weight: {{section.settings.description_font_weight}}
   }
 </style>
+
+
+<section class="collage-container">
+  <div class="collage-header">
+    {% if section.settings.heading != blank %}
+      <div class="head_hashtag">{{ section.settings.heading }}</div>
+    {% endif %}
+    {% if section.settings.hashtag != blank %}
+      <div class="collage_hashtag">{{ section.settings.hashtag }}</div>
+    {% endif %}
+  </div>
+  <div class="test-collage--grid">
+    <div class="first">
+      {% for block in section.blocks %}
+        {% if forloop.index == 1 %}
+          <div class="first--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image"  loading="lazy">
+            {% endif %}
+          </div>
+        {% elsif forloop.index == 2 %}
+          <div class="second--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image" loading="lazy">
+            {% endif %}
+          </div>
+        {% elsif forloop.index == 3 %}
+          <div class="third--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image" loading="lazy">
+            {% endif %}
+          </div>
+        {% elsif forloop.index == 4 %}
+          <div class="forth--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image" loading="lazy">
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="second">
+      {% if section.blocks.size > 4 %}
+        <div class="fifth--card">
+          {% if section.blocks[4].settings.image %}
+            <img src="{{ section.blocks[4].settings.image | img_url: '720x' }}" alt="Collage Image" loading="lazy">
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+    <div class="third">
+      {% for block in section.blocks offset: 5 %}
+        {% if forloop.index == 1 %}
+          <div class="sixth--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image" loading="lazy">
+            {% endif %}
+          </div>
+        {% elsif forloop.index == 2 %}
+          <div class="seventh--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image" loading="lazy">
+            {% endif %}
+          </div>
+        {% elsif forloop.index == 3 %}
+          <div class="eighth--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image" loading="lazy">
+            {% endif %}
+          </div>
+        {% elsif forloop.index == 4 %}
+          <div class="ninth--card">
+            {% if block.settings.image %}
+              <img src="{{ block.settings.image | image_url: width: '720x' }}" alt="Collage Image" class="ninth-img" loading="lazy">
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
 
 {% schema %}
 {
@@ -191,7 +193,7 @@
       "max": 5,
       "step": 0.1,
       "unit": "rem"
-    },
+    }
   ],
   "blocks": [
     {
@@ -241,7 +243,7 @@
   ],
   "presets": [
     {
-      "name": "Test Collage",
+      "name": "Grid Custom Collage",
       "blocks": [
         {
           "type": "image"

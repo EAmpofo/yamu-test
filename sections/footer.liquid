@@ -1,5 +1,32 @@
 {{ 'custom-footer.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .footer {
+    background-color: {{section.settings.footer_bg}};
+    color: {{section.settings.footer_text}} !important;
+  }
+  .footer-links .footer-newsletter h4, li, .linkss  {
+    color: {{section.settings.footer_text}} !important;
+  }
+  .footer-links li, a, h4, .footer-bottom, hr, .footer-newsletter button {
+    /* color: {{section.settings.footer_text}}; */
+  }
+  .footer-newsletter input, .footer-newsletter button {
+    border-bottom: 2px solid {{section.settings.footer_text}} !important;
+  }
+  .footer-links h4, .footer-newsletter h4 {
+    font-size: {{section.settings.link_font_size}}rem;
+    font-weight: {{section.settings.link_font_weight}};
+    color: {{section.settings.links_text-color}}
+  }
+  .bottom-line {
+    height: 2px !important;
+    display: block !important;
+    background-color: {{section.settings.footer_text}};
+  }
+</style>
+
+
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-brand">
@@ -74,31 +101,6 @@
     {% endif -%}
   </div>
 </footer>
-<style>
-  .footer {
-    background-color: {{section.settings.footer_bg}};
-    color: {{section.settings.footer_text}} !important;
-  }
-  .footer-links .footer-newsletter h4, li, .linkss  {
-    color: {{section.settings.footer_text}} !important;
-  }
-  .footer-links li, a, h4, .footer-bottom, hr, .footer-newsletter button {
-    /* color: {{section.settings.footer_text}}; */
-  }
-  .footer-newsletter input, .footer-newsletter button {
-    border-bottom: 2px solid {{section.settings.footer_text}} !important;
-  }
-  .footer-links h4, .footer-newsletter h4 {
-    font-size: {{section.settings.link_font_size}}rem;
-    font-weight: {{section.settings.link_font_weight}};
-    color: {{section.settings.links_text-color}}
-  }
-  .bottom-line {
-    height: 2px !important;
-    display: block !important;
-    background-color: {{section.settings.footer_text}};
-  }
-</style>
 
 {% schema %}
 {
@@ -107,7 +109,7 @@
     {
       "type": "image_picker",
       "id": "logo",
-      "label": "Footer logo",
+      "label": "Footer logo"
     },
     {
       "type": "header",
@@ -198,7 +200,7 @@
       "label": "Newsletter",
       "id": "newsletter",
       "default": "Newsletter"
-    },
+    }
 
   ]
 }
