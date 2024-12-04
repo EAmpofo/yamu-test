@@ -6,12 +6,23 @@
   line-height: 48px;
 }
 
+/* .product-grid {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+ */
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  justify-content: center; /* Center items horizontally */
+  gap: 28px; /* Adjust the gap between items */
 }
 
+.product-grid > .product-card-col {
+  flex: 0 0 calc(25% - 28px); /* Makes each item take up 25% of the row width, minus the gap */
+}
 .product-card-col {
   position: relative;
   overflow: hidden;
