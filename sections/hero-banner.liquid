@@ -5,7 +5,7 @@
     font-size: {{section.settings.tag_font_size}}rem;
   }
   .hero-banner__title {
-    font-size: {{section.settings.heading_size}}rem;
+    font-size: {{section.settings.heading_size}}px;
   }
   .hero-banner__button {
     color: {{ section.settings.btn_color }};
@@ -67,198 +67,198 @@
 </div>
 
 {% schema %}
-  {
-    "name": "Hero Banner with Products",
-    "settings": [
-      {
-        "type": "header",
-        "content": "Background Settings"
-      },
-      {
-        "type": "image_picker",
-        "id": "background_image",
-        "label": "Background Image"
-      },
-      {
-        "type": "color",
-        "id": "overlay_color",
-        "label": "Overlay Color",
-        "default": "#000000"
-      },
-      {
-        "type": "range",
-        "id": "overlay_opacity",
-        "min": 0,
-        "max": 100,
-        "step": 5,
-        "unit": "%",
-        "label": "Overlay Opacity",
-        "default": 50
-      },
-      {
-    "type": "select",
-    "id": "background_position",
-    "label": "Background Position",
-    "options": [
-      { "value": "top left", "label": "Top Left" },
-      { "value": "top center", "label": "Top Center" },
-      { "value": "top right", "label": "Top Right" },
-      { "value": "center left", "label": "Center Left" },
-      { "value": "center center", "label": "Center Center" },
-      { "value": "center right", "label": "Center Right" },
-      { "value": "bottom left", "label": "Bottom Left" },
-      { "value": "bottom center", "label": "Bottom Center" },
-      { "value": "bottom right", "label": "Bottom Right" }
-    ],
-    "default": "center center"
+{
+  "name": "Hero Banner with Products",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Background Settings"
     },
-      {
-        "type": "header",
-        "content": "Banner Content"
-      },
-      {
-        "type": "text",
-        "id": "tag_text",
-        "label": "Tag Text",
-        "default": "New Arrival!"
-      },
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Heading",
-        "default": "Transform Your Space with Our New Collection"
-      },
-      {
-        "type": "textarea",
-        "id": "description",
-        "label": "Description",
-        "default": "Discover our stunning new collection of furniture, designed to elevate your space with style and comfort."
-      },
-      {
-        "type": "text",
-        "id": "button_text",
-        "label": "Button Text",
-        "default": "BUY NOW"
-      },
-      {
-        "type": "url",
-        "id": "button_link",
-        "label": "Button Link"
-      },
-      {
-        "type": "range",
-        "id": "button_width",
-        "min": 0,
-        "max": 300,
-        "step": 4,
-        "unit": "px",
-        "label": "Button width",
-        "default": 120
-      },
-      {
-        "type": "range",
-        "id": "padding",
-        "min": 0,
-        "max": 300,
-        "step": 4,
-        "unit": "px",
-        "label": "padding",
-        "default": 120
-      },
-      {
-        "type": "range",
-        "id": "border_radius",
-        "min": 0,
-        "max": 100,
-        "step": 1,
-        "unit": "px",
-        "label": "Button border radius",
-        "default": 0
-      },
-      {
-        "type": "color",
-        "id": "button_color",
-        "label": "Text Color",
-        "default": "#ffffff"
-      },
-      {
-        "type": "header",
-        "content": "Content Style"
-      },
-      {
-        "type": "range",
-        "id": "tag_font_size",
-        "label": "Tag Font Size",
-        "default": 2,
-        "min": 1,
-        "max": 10,
-        "step": 1,
-        "unit": "rem"
-      },
-      {
-        "type": "header",
-        "content": "Style Settings"
-      },
-      {
-        "type": "select",
-        "id": "content_alignment",
-        "label": "Content Alignment",
-        "options": [
-          {
-            "value": "left",
-            "label": "Left"
-          },
-          {
-            "value": "center",
-            "label": "Center"
-          },
-          {
-            "value": "right",
-            "label": "Right"
-          }
-        ],
-        "default": "left"
-      },
-       {
-        "type": "range",
-        "id": "heading_size",
-        "label": "Heading Font Size",
-        "default": 2,
-        "min": 1,
-        "max": 20,
-        "step": 0.5,
-        "unit": "rem"
-      },
-      {
-        "type": "color",
-        "id": "text_color",
-        "label": "Text Color",
-        "default": "#ffffff"
-      },
-      {
-        "type": "color",
-        "id": "btn_color",
-        "label": "Button Text Color",
-        "default": "#ffffff"
-      },
-      {
-        "type": "color",
-        "id": "background_color",
-        "default": "#000",
-        "label": "Content Background"
-      },
-      {
-        "type": "color",
-        "id": "btn_background_color",
-        "default": "#000",
-        "label": "Button Background"
-      },
-  
-    ],
-    "presets": [
-      {
-        "name": "Custom Hero"
-      }
-    ]
-  }
-  {% endschema %}
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Overlay Opacity",
+      "default": 50
+    },
+    {
+  "type": "select",
+  "id": "background_position",
+  "label": "Background Position",
+  "options": [
+    { "value": "top left", "label": "Top Left" },
+    { "value": "top center", "label": "Top Center" },
+    { "value": "top right", "label": "Top Right" },
+    { "value": "center left", "label": "Center Left" },
+    { "value": "center center", "label": "Center Center" },
+    { "value": "center right", "label": "Center Right" },
+    { "value": "bottom left", "label": "Bottom Left" },
+    { "value": "bottom center", "label": "Bottom Center" },
+    { "value": "bottom right", "label": "Bottom Right" }
+  ],
+  "default": "center center"
+  },
+    {
+      "type": "header",
+      "content": "Banner Content"
+    },
+    {
+      "type": "text",
+      "id": "tag_text",
+      "label": "Tag Text",
+      "default": "New Arrival!"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Transform Your Space with Our New Collection"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Discover our stunning new collection of furniture, designed to elevate your space with style and comfort."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "BUY NOW"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "range",
+      "id": "button_width",
+      "min": 0,
+      "max": 300,
+      "step": 4,
+      "unit": "px",
+      "label": "Button width",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 300,
+      "step": 4,
+      "unit": "px",
+      "label": "padding",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Content Style"
+    },
+    {
+      "type": "range",
+      "id": "tag_font_size",
+      "label": "Tag Font Size",
+      "default": 16,
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Style Settings"
+    },
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "label": "Content Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+     {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading Font Size",
+      "default": 2,
+      "min": 1,
+      "max": 20,
+      "step": 0.5,
+      "unit": "rem"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "btn_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "default": "#000",
+      "label": "Content Background"
+    },
+    {
+      "type": "color",
+      "id": "btn_background_color",
+      "default": "#000",
+      "label": "Button Background"
+    },
+
+  ],
+  "presets": [
+    {
+      "name": "Custom Hero"
+    }
+  ]
+}
+{% endschema %}
