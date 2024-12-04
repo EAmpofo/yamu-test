@@ -27,11 +27,12 @@
       "footer": {
         "type": "footer",
         "settings": {
+          "logo": "shopify://shop_images/Frame_168.svg",
           "links": "Links",
           "menu": "main-menu",
           "links_text-color": "#9aa969",
-          "link_font_size": 1.1,
-          "link_font_weight": "400",
+          "link_font_size": 1.6,
+          "link_font_weight": "700",
           "copyright": "2024 Furnitura. All rights reserved",
           "address": "400 University Drive Suite 200 Coral Gables, FL 33134 USA",
           "show_newsletter": true,
