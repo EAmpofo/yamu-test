@@ -158,5 +158,8 @@
     .first--card img {
       display: none;
     }
+    .collage_hashtag {
+      font-size: 20px;
+    }
   }
 </style>
