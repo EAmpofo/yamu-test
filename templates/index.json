@@ -187,54 +187,63 @@
         "image_K9bBxk": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_36.png",
             "position": "center-square"
           }
         },
         "image_iCWej9": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_38.png",
             "position": "center-square"
           }
         },
         "image_YLBQVJ": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_37.png",
             "position": "center-square"
           }
         },
         "image_EFExdJ": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_39.png",
             "position": "center-square"
           }
         },
         "image_EyLpTj": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_40.png",
             "position": "center-square"
           }
         },
         "image_JVwVTb": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_43.png",
             "position": "center-square"
           }
         },
         "image_eFxfiU": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_41.png",
             "position": "center-square"
           }
         },
         "image_C3aJcz": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_44.png",
             "position": "center-square"
           }
         },
         "image_Fy6hbU": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Rectangle_45.png",
             "position": "center-square"
           }
         }
