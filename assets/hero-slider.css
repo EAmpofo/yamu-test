@@ -148,10 +148,22 @@
     font-weight: bold;
     color: #1a1a1a;
   }
+.scroll-down {
+    z-index: 100;
+    position: fixed;
+    right: 15rem;
+    bottom: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
 
   @media screen and (max-width: 768px) {
     .hero-banner {
       min-height: 400px;
+    }
+    .scroll-down {
+      right: 0rem;
     }
     .hero-banner__tag, .hero-banner__description{
       font-size: 14px !important;
