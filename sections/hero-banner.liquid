@@ -1,24 +1,38 @@
 {{ 'hero-slider.css' | asset_url | stylesheet_tag }}
 
 <style>
-  .hero-banner__tag, .hero-banner__description {
-    font-size: {{section.settings.tag_font_size}}px;
-  }
-  .hero-banner__title {
-    font-size: {{section.settings.heading_size}}px;
-  }
-  .hero-banner__button {
-    color: {{ section.settings.btn_color }};
-    background-color:{{ section.settings.btn_background_color }};
-    width: {{section.settings.button_width}}px;
-    padding: {{section.settings.padding}}px;
-    border-radius: {{section.settings.border_radius}}px;
-  }
-  .scroll-down {
+    .hero-banner__tag, .hero-banner__description {
+      font-size: {{section.settings.tag_font_size}}px;
+    }
+    .hero-banner__title {
+      font-size: {{section.settings.heading_size}}px;
+    }
+    .hero-banner__button {
+      color: {{ section.settings.btn_color }};
+      background-color:{{ section.settings.btn_background_color }};
+      width: {{section.settings.button_width}}px;
+      padding: {{section.settings.padding}}px;
+      border-radius: {{section.settings.border_radius}}px;
+    }
+    /* .scroll-down {
+      z-index: 100;
+      position: absolute;
+      right: 15rem;
+      bottom: -18rem;
+    } */
+    .scroll-down {
     z-index: 100;
-    position: absolute;
-    right: 15rem;
-    bottom: -18rem;
+    position: fixed;  /* Fixed position to keep it on the screen */
+    right: 15rem;     /* Adjust the right position as needed */
+    bottom: 2rem;     /* Keep it above the very bottom edge */
+    cursor: pointer;  /* Change cursor to indicate it's clickable */
+    padding: 10px;     /* Add some padding for better click area */
+    background-color: rgba(0, 0, 0, 0.5);  /* Optional: Background for better visibility */
+    border-radius: 50%; /* Optional: round shape */
+  }
+
+  .scroll-down:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker on hover */
   }
 </style>
 
