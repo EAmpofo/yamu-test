@@ -79,3 +79,9 @@
   font-size: 12px;
   margin-top: 30px;
 }
+@media screen and (max-width: 768px) {
+  .footer {
+  height: 600px;
+}
+
+}
