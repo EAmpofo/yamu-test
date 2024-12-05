@@ -5,18 +5,17 @@
   }
   .collage-header{
     color: {{section.settings.heading_text}};
-    padding: {{section.settings.padding_size}}rem;
+    padding: {{section.settings.padding_size}}px;
   }
   .head_hastag{
-    font-size: {{section.settings.heading_font_size}}rem;
+    font-size: {{section.settings.heading_font_size}}px;
     font-weight: {{section.settings.heading_font_weight}}
   }
   .collage_hashtag{
-    font-size: {{section.settings.description_font_size}}rem;
+    font-size: {{section.settings.description_font_size}}px;
     font-weight: {{section.settings.description_font_weight}}
   }
 </style>
-
 
 <section class="collage-container">
   <div class="collage-header">
@@ -33,7 +32,7 @@
         {% if forloop.index == 1 %}
           <div class="first--card">
             {% if block.settings.image %}
-              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image"  loading="lazy">
+              <img src="{{ block.settings.image | img_url: '720x' }}" alt="Collage Image" loading="lazy">
             {% endif %}
           </div>
         {% elsif forloop.index == 2 %}
@@ -89,7 +88,12 @@
         {% elsif forloop.index == 4 %}
           <div class="ninth--card">
             {% if block.settings.image %}
-              <img src="{{ block.settings.image | image_url: width: '720x' }}" alt="Collage Image" class="ninth-img" loading="lazy">
+              <img
+                src="{{ block.settings.image | image_url: width: '720x' }}"
+                alt="Collage Image"
+                class="ninth-img"
+                loading="lazy"
+              >
             {% endif %}
           </div>
         {% endif %}
@@ -97,8 +101,6 @@
     </div>
   </div>
 </section>
-
-
 
 {% schema %}
 {
@@ -134,11 +136,11 @@
       "type": "range",
       "id": "heading_font_size",
       "label": "Heading Font Size",
-      "default": 2.5,
+      "default": 16,
       "min": 1,
-      "max": 5,
-      "step": 0.1,
-      "unit": "rem"
+      "max": 100,
+      "step": 1,
+      "unit": "px"
     },
     {
       "type": "select",
@@ -161,11 +163,11 @@
       "type": "range",
       "id": "description_font_size",
       "label": "Description Font Size",
-      "default": 1.1,
-      "min": 0.5,
-      "max": 3,
-      "step": 0.1,
-      "unit": "rem"
+      "default": 16,
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
     },
     {
       "type": "select",
@@ -188,11 +190,11 @@
       "type": "range",
       "id": "padding_size",
       "label": "Padding",
-      "default": 2.5,
+      "default": 16,
       "min": 1,
-      "max": 5,
-      "step": 0.1,
-      "unit": "rem"
+      "max": 100,
+      "step": 1,
+      "unit": "px"
     }
   ],
   "blocks": [
