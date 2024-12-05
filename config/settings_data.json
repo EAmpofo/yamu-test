@@ -28,6 +28,7 @@
         "type": "footer",
         "settings": {
           "logo": "shopify://shop_images/Frame_168.svg",
+          "logo_width": 150,
           "links": "Links",
           "menu": "main-menu",
           "links_text-color": "#9aa969",
