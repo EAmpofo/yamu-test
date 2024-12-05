@@ -37,15 +37,45 @@
 </style>
 
 <script>
+    //   document.addEventListener("DOMContentLoaded", function() {
+    //   const scrollDownButton = document.querySelector('.scroll-down');
+
+    //   scrollDownButton.addEventListener('click', function() {
+    //     window.scrollTo({
+    //       top: document.body.scrollHeight,
+    //       behavior: 'smooth'
+    //     });
+    //   });
+    // });
     document.addEventListener("DOMContentLoaded", function() {
+    // Get the scroll-down button
     const scrollDownButton = document.querySelector('.scroll-down');
 
+    // Function to check if the user has scrolled to the bottom of the page
+    function checkScrollPosition() {
+      // Check if the user has reached the bottom of the page
+      if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
+        // Hide the scroll-down button when at the bottom of the page
+        scrollDownButton.style.display = 'none';
+      } else {
+        // Show the scroll-down button when not at the bottom
+        scrollDownButton.style.display = 'block';
+      }
+    }
+
+    // Add event listener for scroll to track the user's scroll position
+    window.addEventListener('scroll', checkScrollPosition);
+
+    // Add event listener to the scroll-down button to scroll to the bottom of the page
     scrollDownButton.addEventListener('click', function() {
       window.scrollTo({
         top: document.body.scrollHeight,
         behavior: 'smooth'
       });
     });
+
+    // Initial check to set the correct visibility when the page is loaded
+    checkScrollPosition();
   });
 </script>
 
