@@ -180,6 +180,87 @@
         "heading_font_weight": "700",
         "margin_size": 60
       }
+    },
+    "grid_custom_collage_q9ickj": {
+      "type": "grid-custom-collage",
+      "blocks": {
+        "image_K9bBxk": {
+          "type": "image",
+          "settings": {
+            "position": "center-square"
+          }
+        },
+        "image_iCWej9": {
+          "type": "image",
+          "settings": {
+            "position": "center-square"
+          }
+        },
+        "image_YLBQVJ": {
+          "type": "image",
+          "settings": {
+            "position": "center-square"
+          }
+        },
+        "image_EFExdJ": {
+          "type": "image",
+          "settings": {
+            "position": "center-square"
+          }
+        },
+        "image_EyLpTj": {
+          "type": "image",
+          "settings": {
+            "position": "center-square"
+          }
+        },
+        "image_JVwVTb": {
+          "type": "image",
+          "settings": {
+            "position": "center-square"
+          }
+        },
+        "image_eFxfiU": {
+          "type": "image",
+          "settings": {
+            "position": "center-square"
+          }
+        },
+        "image_C3aJcz": {
+          "type": "image",
+          "settings": {
+            "position": "center-square"
+          }
+        },
+        "image_Fy6hbU": {
+          "type": "image",
+          "settings": {
+            "position": "center-square"
+          }
+        }
+      },
+      "block_order": [
+        "image_K9bBxk",
+        "image_iCWej9",
+        "image_YLBQVJ",
+        "image_EFExdJ",
+        "image_EyLpTj",
+        "image_JVwVTb",
+        "image_eFxfiU",
+        "image_C3aJcz",
+        "image_Fy6hbU"
+      ],
+      "settings": {
+        "heading": "Share your setup with",
+        "hashtag": "#Funitura_Furniture",
+        "heading_text": "#3a3a3a",
+        "colage_bg": "#fff",
+        "heading_font_size": 20,
+        "heading_font_weight": "700",
+        "description_font_size": 40,
+        "description_font_weight": "700",
+        "padding_size": 1
+      }
     }
   },
   "order": [
@@ -188,6 +269,7 @@
     "hero_banner_products_LEMEDb",
     "custom_collection_section_B3tFec",
     "our_product_custom_qHaUTi",
-    "image_slideshow_MnMgf8"
+    "image_slideshow_MnMgf8",
+    "grid_custom_collage_q9ickj"
   ]
 }
