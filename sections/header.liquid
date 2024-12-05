@@ -4,22 +4,22 @@
   .header__logo {
     width: {{ section.settings.logo_width }}px;
   }
-
 </style>
-
 
 <div class="header-wrapper{% if section.settings.sticky_header %} header-wrapper--sticky{% endif %}">
   <header class="header" data-header role="banner">
     <div class="page-width">
       <div class="header__content-wrapper">
-        <button
-          class="header__menu-toggle"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          data-mobile-menu-toggle
-        >
-          {% render 'icon-custom-hamburger' %}
-        </button>
+        <!--
+          <button
+            class="header__menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-mobile-menu-toggle
+          >
+          </button>
+        -->
+        {% render 'custom-menu' %}
 
         <div class="header__logo-wrapper{% if section.settings.logo_position == 'center' %} header__logo-wrapper--center{% endif %}">
           <a href="{{ routes.root_url }}" class="header__logo-link">
@@ -158,8 +158,6 @@
   </div>
 </div>
 
-
-
 <script>
   class Header {
     constructor() {
@@ -217,52 +215,52 @@
 </script>
 
 {% schema %}
-  {
-    "name": "Header",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "logo",
-        "label": "Logo image"
-      },
-      {
-        "type": "range",
-        "id": "logo_width",
-        "min": 50,
-        "max": 250,
-        "step": 10,
-        "unit": "px",
-        "label": "Logo width",
-        "default": 140
-      },
-      {
-        "type": "link_list",
-        "id": "menu",
-        "label": "Menu",
-        "default": "main-menu"
-      },
-      {
-        "type": "checkbox",
-        "id": "sticky_header",
-        "label": "Sticky header",
-        "default": true
-      },
-      {
-        "type": "select",
-        "id": "logo_position",
-        "label": "Logo position",
-        "options": [
-          {
-            "value": "left",
-            "label": "Left"
-          },
-          {
-            "value": "center",
-            "label": "Center"
-          }
-        ],
-        "default": "left"
-      }
-    ]
-  }
-  {% endschema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 50,
+      "max": 250,
+      "step": 10,
+      "unit": "px",
+      "label": "Logo width",
+      "default": 140
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "checkbox",
+      "id": "sticky_header",
+      "label": "Sticky header",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "logo_position",
+      "label": "Logo position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "left"
+    }
+  ]
+}
+{% endschema %}
