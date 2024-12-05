@@ -61,7 +61,6 @@
 
 .multicolumn-product-cards .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
 }
 
 .card {
