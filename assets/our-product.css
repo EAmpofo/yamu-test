@@ -181,7 +181,7 @@ h3 {
 @media (max-width: 768px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px !important;
+    gap: 0px !important;
     padding: 0px !important;
   }
   .container h2 {
