@@ -10,14 +10,14 @@
   <header class="header" data-header role="banner">
     <div class="page-width">
       <div class="header__content-wrapper">
-        <button
+        <div
           class="header__menu-toggle"
           aria-expanded="false"
           aria-controls="mobile-menu"
           data-mobile-menu-toggle
         >
           {% render 'custom-menu' %}
-        </button>
+        </div>
 
         <div class="header__logo-wrapper{% if section.settings.logo_position == 'center' %} header__logo-wrapper--center{% endif %}">
           <a href="{{ routes.root_url }}" class="header__logo-link">
