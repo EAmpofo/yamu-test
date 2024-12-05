@@ -196,7 +196,7 @@ h3 {
 
   .product-info h3,
   .price {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   .show-more {
