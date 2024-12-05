@@ -81,11 +81,17 @@
 }
 @media screen and (max-width: 768px) {
   .footer {
-    height: 600px;
+    height: 655px;
   }
   .footer-container {
-    height: 0px;
+    height: 560px;
     gap: 0px
+  }
+  .footer-bottom p {
+    margin-top: 15px;
+  }
+  .footer-links li {
+    margin: 20px 0px;
   }
 
 }
