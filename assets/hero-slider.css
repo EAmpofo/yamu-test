@@ -202,18 +202,15 @@
 
     .hero-banner__background {
     
-    z-index: 0;
-  }
+      z-index: 0;
+    }
 
+    .hero-banner__overlay {
+      z-index: 0;
+    }
 
-  .hero-banner__overlay {
-    
-    z-index: 0;
-  }
-
-
-  .hero-banner__content {
-    z-index: 0;
-  }
+    .hero-banner__content {
+      z-index: 0;
+    }
   }
 </style>
