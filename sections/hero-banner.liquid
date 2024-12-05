@@ -22,6 +22,19 @@
   }
 </style>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const scrollDownButton = document.querySelector('.scroll-down');
+
+    scrollDownButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
 <div class="hero-section">
   <div class="hero-banner">
     <div class="hero-banner__background" style="background-position: {{ section.settings.background_position }}">
